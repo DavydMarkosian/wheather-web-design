@@ -1,0 +1,144 @@
+body {
+  margin: 0;
+  background-image: url("./assets/images/2148097601.jpg");
+  width: 100vw;
+  height: 100vh;
+  font-family: "Open Sans", sans-serif;
+  color: rgb(25, 25, 67);
+}
+.flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 100%;
+  width: 100%;
+  gap: 2%;
+}
+.head {
+  width: 70%;
+  height: 20%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.head > div {
+  width: 30%;
+}
+.flex-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 40%;
+  height: 70%;
+}
+.flex-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 55%;
+  height: 70%;
+}
+
+.left-top-flexbox {
+  height: 45%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.left-bottom-flexbox {
+  height: 45%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.right-top-grid {
+  display: grid;
+  width: 100%;
+  height: 45%;
+  grid-template-columns: 0.5fr 0.5fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 5px;
+}
+.right-top-grid div:nth-child(1) {
+  grid-column: 1/3;
+}
+.right-top-grid div:nth-child(2) {
+  grid-area: 1/3/-1/-1;
+}
+.right-top-grid div:nth-child(3) {
+  grid-area: 2/1/-1/2;
+}
+.right-top-grid div:nth-child(4) {
+  grid-area: 2/2/-1/3;
+}
+.right-bottom-flexbox {
+  width: 100%;
+  height: 45%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 5px;
+}
+.left-bottom-grid,
+.right-bottom-grid {
+  width: 45%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 5px;
+}
+
+.center-bottom-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  width: 10%;
+  height: 100%;
+  gap: 5px;
+}
+.justify {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.justify-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.justify-column > p:nth-child(2) {
+  font-size: 12px;
+}
+.main-temp {
+  font-size: 4rem;
+  margin: 0;
+}
+p {
+  margin: 0;
+}
+.loc {
+  font-size: 2.5rem;
+}
+.high-temp {
+  font-size: 2rem;
+}
+.wind {
+  font-size: 2.5rem;
+}
+.sub {
+  vertical-align: sub;
+  font-size: 50%;
+}
+.left-bottom-grid > div:nth-child(even) {
+  font-size: 2rem;
+}
+.right-bottom-grid > div:nth-child(odd) {
+  font-size: 1.5rem;
+}
+.right-bottom-grid > div:nth-child(even) {
+  font-size: 1.5rem;
+}
